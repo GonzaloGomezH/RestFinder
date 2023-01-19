@@ -5,6 +5,7 @@ $password = ""; // la contraseña del usuario
 $dbname = "restfinder"; // el nombre de la base de datos
 
 // Crear conexión
+$_POST['Us'];
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
 // Verificar conexión
