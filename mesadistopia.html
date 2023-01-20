@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RestFinder</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo1.css">
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    
 </head>
-
-    <header class="header">
+<header class="header">
     <form>
 
         <!-- Desplegable -->
         <button class="desplegable" type="button" data-bs-toggle="dropdown" id="dropdown">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
             <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
           </svg>
         <span class="caret"></span>
@@ -28,51 +26,12 @@
         <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
         <li><a class="dropdown-item" href="nosotros.html">¿Quiénes somos?</a></li>
     </ul>
-    
 
         <!-- Logo -->
         <a title="RestFinder" href="index.html"><img src="image.png" alt="Logo" /></a>
 
         <!-- Buscador -->
-        <input type="text" value="" id="search" onchange="openPage()" class="imput text-white" placeholder=" Buscar restaurantes" >
-        
-          <script>
-            function openPage(){
-              var x = document.getElementById("search").value;
-
-              if(x === "piamontesa"){
-                window.open("mesapia.html");              
-              }
-
-              if(x === "distopia"){
-                window.open("mesadistopia.html");              
-              }
-
-              if(x === "serenata"){
-                window.open("/mesasere.html");             
-              }
-
-              if(x === "living room"){
-                window.open("/mesaliving.html");    
-              }
-                
-              if(x === "raimunda"){
-                window.open("/mesaraimunda.html");              
-              }
-              
-                if(x === "dragon khan"){
-                window.open("/mesadragon.html");    
-              }
-
-              if(x === "rincon"){
-                window.open("/mesarincon.html");              
-              }
-
-                if(x === "masia"){
-                window.open("/mesamasia.html");    
-              }
-            }
-          </script>
+        <input type="text" class="imput text-white" placeholder=" Buscar restaurantes" >
 
         <!-- Icono Buscador -->
         <button class="botonbuscador"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="white" class="bi bi-search" viewBox="0 0 16 16">
@@ -107,61 +66,85 @@
         
 </header>
 <body>
-    <br><br>
-    <div><h2><center>Presentacion de servicios de la página</center></h2></div>
+    
+<section class="card">
+  
+  <div class="container px-4 py-5" id="featured-3">
+    <center><h1 class="testonosotro">MESAS DISTOPIA</h1></center>
+    <h2 class="pb-2 border-bottom"></h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
-    <!-- CONTENEDOR DE DIVS -->
-    <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom"></h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <!-- DIV IZQUIERDO -->
+      <div class="feature col">
+        <center>
+        <p>  </p>
+        <h3 class="fs-2">Número de personas:</h3>
+        <form>
+          SELECCIONE UN NÚMERO DE PERSONAS:
+          <select>
+            
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+         </select>
+     </form>
+     
+      </center></div>
 
-          <!-- DIV IZQUIERDO -->
-          <div class="feature col">
-            <center><div class="iconoindex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-              </svg>
-            </div>
-            <p>  </p>
-            <h3 class="fs-2">Elige tu restaurante y mesa</h3>
-            <p>Elige tu restautante deseado, así como la mesa que prefieras.</p>
-          </div></center>
+          
 
-          <!-- DIV CENTRO -->
-          <div class="feature col">
-            <center><div class="iconoindex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-              </svg>
-            </div>
-            <p>  </p>
-            <h3 class="fs-2">Elige la hora</h3>
-            <p>Elige hora entre todas las disponibles en tiempo real.</p>
-              
-              
-            </a>
-          </div></center>
+      <!-- DIV CENTRO -->
+      <div class="feature col">
+        <center>
+        <p>  </p>
+        <h3 class="fs-2">Elige una hora de reserva:</h3>
+        <form>
+          SELECCIONE UNA HORA:
+          <select>
+             <option>14:00</option>
+             <option>15:00</option>
+             <option>16:00</option>
+             <option>20:00</option>
+             <option>21:00</option> 
+          </select>
+        </form>
 
-          <!-- DIV DERECHO -->
-          <div class="feature col">
-            <center><div class="iconoindex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
-                <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
-              </svg>
-            </div>
-            <p>  </p>
-            <h3 class="fs-2">Reserva online</h3>
-            <p>Hazlo desde nuestra web totalmente online para mayor comodidad.</p>
-          </div></center>
+      </center></div>
 
-        </div>
-      </div>
 
+      <!-- DIV DERECHO -->
+      <div class="feature col">
+        <center>
+        <p>  </p>
+        <h3 class="fs-2">Elige una mesa:</h3>
+        <form>
+          SELECCIONE UNA MESA:
+          <select>
+             <option>Mesa 1</option>
+             <option>Mesa 2</option>
+             <option>Mesa 3</option>
+             <option>Mesa 4</option> 
+             <option>Mesa 5</option>
+             <option>Mesa 6</option>
+          </select>
+        </form>
+      </center></div>
+
+
+    </div>
+  </div>
+
+  <script src="alerta.js"></script>
+
+
+  <center><button style="color: white; font-size: 18pt; width: 170px; height: 70px; background-color:rgb(240,81,104);" onclick="alerta()">Reservar</button><center>
+
+</section>
+<br> <br>
 </body>
-
-    <!-- Footer -->
 <footer class="footer">
     <!-- Grid container -->
     <div class="container p-4">
@@ -214,12 +197,10 @@
     <!-- Grid container -->
   
     <!-- Copyright -->
-    <div class="text-center p-3" ">
+    <div class="text-center p-3">
       © 2022 RestFinder
 
     </div>
     <!-- Copyright -->
   </footer>
-
-  
 </html>
