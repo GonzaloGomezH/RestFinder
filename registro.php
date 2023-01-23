@@ -10,20 +10,26 @@
 <body>
 
     <div class="signupFrm">
-        
-        <form action="" class="form">
+  
+        <form action="conexion.php" method="post" class="form">
         <a href="index.html">
         <button type="button" class="submitBtn">Atras</button>
         </a>
-          <h1 class="title">Iniciar sesion</h1>
+          <h1 class="title">Registro</h1>
+          
+            
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="nombre_completo">
+            <label for="" class="label">Nombre completo</label>
+          </div>
     
           <div class="inputContainer">
-            <input type="text" class="input" placeholder="a">
+            <input type="text" class="input" placeholder="a" name="nombre_usuario">
             <label for="" class="label">Usuario</label>
           </div>
     
           <div class="inputContainer">
-            <input type="text" class="input" placeholder="a">
+            <input type="text" class="input" placeholder="a" name="password">
             <label for="" class="label">Contraseña</label>
           </div>
     
@@ -147,7 +153,9 @@
   font-weight: 600;
 }
 </style>
-
+<?php
+    include('conexion.php')
+    ?>
 </body>
 
 

@@ -18,11 +18,12 @@ $nombre_usuario = $_POST['nombre_usuario'];
 $password = $_POST['password'];
 
 // Crear la consulta SQL para insertar los datos en la tabla
-$sql = "INSERT INTO sesion (nombre, usuario, constraseña) VALUES ('$nombre_completo', '$nombre_usuario', '$password')";
+$sql = "INSERT INTO sesion (NOMBRE, USUARIO, CONTRASENA) VALUES ('$nombre_completo', '$nombre_usuario', '$password')";
 
 // Ejecutar la consulta SQL
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
+    header('Location: index.html');
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
